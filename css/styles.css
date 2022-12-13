@@ -99,6 +99,10 @@ width: 1158px;
     padding-bottom: 24px;
   }
 
+
+  .mobile-menu.is-open{
+    display: none;
+  }
 .container{
   display: flex;
   justify-content: space-between;
