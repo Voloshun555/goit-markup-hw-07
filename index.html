@@ -21,11 +21,11 @@
       <div class="container main-nav">
         <div class="logotype">
           <a href="./index.html" class="logo"
-            >Web <span class="studio">Studio</span>
+            >Web<span class="studio">Studio</span>
           </a>
         </div>
 
-        <button class="mobile-menu-open js-open-menu" type="button" >
+        <button class="mobile-menu-open "  type="button" data-menu-open >
           <svg class="mobile-menu-open-icon" width="32" height="22" >
             <use href="./images/symbol-18icon.svg#icon-charm_menu-hamburger-3" ></use>
           </svg>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li class="auth-nav">
+          <li class="auth-nav-contact">
             <a href="mailto:info@devstudio.com" class="nav-mail"
               >info@devstudio.com</a
             >
@@ -57,21 +57,21 @@
       </div>
 
       <!---====================== mobile-menu =========================-->
-      <div class="mobile-menu container js-menu-container is-open">
+      <div class="mobile-menu container is-hidden" data-menu>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn js-close-menu" type="button" >
+          <button class="mobile-menu__close-btn" type="button" data-menu-close >
             <svg class="mobile-menu__close-icon" width="8" height="8">
               <use href="./images/symbol-defs.svg#icon-close-1"></use>
             </svg>
           </button>
           <ul class="nav-menu list">
-            <li>
-              <a href="">Studio</a>
+            <li class="nav-list">
+              <a class="nav-link-menu link-current " href="./index.html">Studio</a>
             </li>
-            <li>
-              <a href="">Portfolio</a>
+            <li class="nav-list">
+              <a class="nav-link-menu " href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a href="">Contacts</a>
+            <li class=""><a class="nav-link-menu" href="">Contacts</a>
             </li>
           </ul>
 
@@ -80,7 +80,7 @@
               <a href="tel:+110001111111" class="nav-menu-tel">+11 000 111 11 11</a>
             </li>
             <li class="">
-              <a href="mailto:info@devstudio.com" class="nav-mail"
+              <a href="mailto:info@devstudio.com" class="nav-mail-menu"
                 >info@devstudio.com</a>
             </li>
           </ul>
@@ -126,15 +126,19 @@
     </header>
     <!-- Main content -->
     <main>
-      <!-- <section class="section-hero">
+       <section class="section-hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-button" data-modal-open>
           Order Service
         </button>
-      </section> -->
-      <!-- Our features -->
-      <!-- <section class="section-features">
-        <div class="container">
+      </section> 
+
+
+      <!--================= Our features =====================-->
+
+
+      <section class="section-features">
+        <div class="container-section">
           <h2 class="visually-hidden">Our features</h2>
           <ul class="features-list list">
             <li class="element-styl">
@@ -187,7 +191,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Our works -->
 
       <!-- <section class="section-work">
@@ -589,11 +593,6 @@ class="modal-form-sabmit">Send</button>
     
   <!-- <script src="./js/modal.js"></script> -->
 
-  <script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"></script>
-<script defer src="js/mobile-menu.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>
