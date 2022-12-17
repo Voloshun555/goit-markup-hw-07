@@ -58,6 +58,25 @@ button {
   padding-right: 15px;
 }
 
+.forma-imput{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  
+  border-radius: 4px;
+  
+  color: #FFFFFF;
+  background-color: #2E2F42;
+  
+  padding: 8px 16px 8px 16px;
+  
+
+width: 396px;
+  }
+
+
+
+
+
 @media screen and (min-width: 480px) {
   .container,
   .container-team {
@@ -78,6 +97,8 @@ button {
     margin-right: auto;
 }
 
+
+}
 
   .hero-title{
     width: 319px;
@@ -114,7 +135,7 @@ width: 480px;
     margin-left: auto;
     margin-right: auto;
 } */
-}
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -135,6 +156,9 @@ width: 480px;
     padding-right: 15px;
   }
   
+  .forma{
+    display: flex;
+    }
 
   .element-styl{
     align-items: center;
@@ -143,6 +167,15 @@ width: 480px;
   .mobile-menu-open {
     display: none;
   }
+
+  .forma-imput{
+    width: 264px;
+  }
+    
+  .btn-subscribe{
+    margin-left: 24px;
+  }
+   
 
   .auth-nav-contact {
     margin-bottom: 4px;
@@ -176,6 +209,9 @@ width: 480px;
     
   }
   
+  .Subscribe{
+    margin-left: 80px;
+  }
   .container-work{
     width: 1158px;
       align-items: center;
@@ -316,11 +352,12 @@ width: 480px;
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
-
   padding: 100px 0px;
+}
+
+.Social-media {
+  margin-left: 120px;
 }
 
 }
@@ -374,7 +411,7 @@ width: 480px;
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1439px){
+@media screen and (min-width: 768px) and (max-width: 1439px){
   .features-list{
     
     gap: 72px;
@@ -390,7 +427,22 @@ width: 480px;
     margin-bottom: 72px;
   } 
 
+.conteiner-footer{
+  width: 565px;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
+    margin-left: auto;
+    margin-right: auto;
+}
+.Subscribe{
+  margin-top: 72px;
+}
+
+.main-footer{
+  margin-right: 24px;
+}
 }
 
 
@@ -398,6 +450,41 @@ width: 480px;
   .Navigation,
   .auth-nav {
     display: none;
+  }
+
+  .main-footer,
+.Social-media,
+.Subscribe{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Social-media{
+  margin-top: 72px;
+  margin-bottom: 72px;
+ }
+
+  .btn-subscribe{
+    margin-left: auto;
+    margin-right: auto;
+  
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: var(--accent-color);
+  width: 164px;
+  padding: 8px 24px;
+  gap: 16px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  transition: background-color 250ms var(--cubic-brauser),
+  box-shadow 250ms var(--cubic-brauser);
   }
 
   .page-header {
@@ -431,6 +518,11 @@ width: 480px;
       column-gap: 24px;
     }
     
+
+    .forma-imput{
+      margin-bottom: 16px;
+    }
+      
     
     
 }
@@ -1056,6 +1148,14 @@ color 250ms var(--cubic-brauser);
  */
 
 /* =========================== Portfolio ================================ */
+.container-portfolio{
+  margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 .section-Portfolio {
   padding-top: 96px;
@@ -1064,7 +1164,7 @@ color 250ms var(--cubic-brauser);
 
 /*==================================== bottom ===============================*/
 
-/* .btm-porfolio {
+ .btm-porfolio {
   margin-bottom: 72px;
 
   justify-content: center;
@@ -1107,11 +1207,11 @@ color 250ms var(--cubic-brauser);
 
   border-radius: 4px;
   border: 1px solid var(--accent-color);
-} */
+} 
 
 /* ================== Card Navigation =======================  */
 
-/* .flex-conteiner {
+.flex-conteiner {
   padding: 0;
   margin: 0;
 
@@ -1178,11 +1278,11 @@ color 250ms var(--cubic-brauser);
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
-} */
+} 
 
 /* ===================  overley  ======================= */
 
-/* .overley {
+.overley {
   position: absolute;
   left: 0;
   top: 0;
@@ -1204,9 +1304,14 @@ color 250ms var(--cubic-brauser);
 .card-link:hover .overley,
 .card-link:focus .overley {
   transform: translate(0, 0);
-} */
+}
 
 /* =============footer============== */
+.conteiner-footer{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 
 .logo-footer {
@@ -1223,7 +1328,7 @@ color 250ms var(--cubic-brauser);
   text-decoration: none;
 }
 .footer  {
-  padding: 60px 0px;
+  padding: 96px 0px;
   background-color: #2e2f42;
 }
 .footer .studio {
@@ -1250,9 +1355,7 @@ color 250ms var(--cubic-brauser);
   margin-bottom: 16px;
 }
 
-.Social-media {
-  margin-left: 120px;
-}
+
 
 .Social-box {
   display: flex;
@@ -1285,9 +1388,9 @@ color 250ms var(--cubic-brauser);
 
 /* ==================== Подписывайся Subscribe ======================*/
 
- .Subscribe{
+ /* .Subscribe{
 margin-left: 80px;
-}
+} */
 
 .Subscribe-title{
 font-weight: 500;
@@ -1300,11 +1403,9 @@ color: #FFFFFF;
 margin-bottom: 16px;
 }
 
-.forma{
-display: flex;
-}
 
-.forma-imput{
+
+/* .forma-imput{
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
@@ -1316,14 +1417,12 @@ background-color: #2E2F42;
 width: 264px;
 
 padding: 8px 16px 8px 16px;
-}
+} */
 
 .btn-subscribe{
-  margin-left: 24px;
-
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  border: var(--accent-color);
+background-color: var(--accent-color);
+border-radius: 4px;
+border: var(--accent-color);
 width: 164px;
 padding: 8px 24px;
 gap: 16px;
@@ -1384,7 +1483,7 @@ letter-spacing: 0.06em;
 } 
 
 /* ====================modalka====================== */
-/* .modal {
+.modal {
   position: absolute;
 
   padding:72px 24px 24px 24px;
@@ -1512,6 +1611,7 @@ display: block;
   padding-left: 16px;
   padding-top: 8px;
   padding-right: 16px;
+  margin-bottom: 16px;
   resize: none;
   width: 100%;
   height: 120px;
@@ -1611,4 +1711,4 @@ box-shadow 250ms var(--cubic-brauser);
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-} */
+} 
